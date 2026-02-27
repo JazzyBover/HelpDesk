@@ -8,7 +8,7 @@
 
 /* ========== BODY========== */
 body {
-  background-image: url("fish.gif");
+  background-image: url("bulb.webp");
   background-size: cover;
   background-position: center;
   color: #e5e7eb;
@@ -69,7 +69,6 @@ body {
 
 /* ========== CARD (SOFT) ========== */
 .card {
-  /* background-color: #111827; */
   backdrop-filter: blur(15px);
   border-radius: 20px;
   padding: 28px;
@@ -97,7 +96,6 @@ body {
 
 /* ========== FILTER BAR ========== */
 .filter-bar {
-  backdrop-filter: blur(15px);
   display: grid;
   grid-template-columns: repeat(3, 1fr) auto;
   gap: 20px;
@@ -191,7 +189,7 @@ textarea {
 .btn {
   padding: 14px 22px;
   border-radius: 14px;
-  background-color: #6366f1;
+  background-color: #5b6364;
   /* active color */
   border: none;
   color: #ffffff;
@@ -201,4 +199,55 @@ textarea {
 
 .btn :hover {
   opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+
+  /* 1️⃣ Sidebar stacks on top */
+  .app {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .sidebar a {
+    margin-bottom: 0;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  /* 2️⃣ Main padding reduced */
+  .main {
+    padding: 24px;
+  }
+
+  /* 3️⃣ Dashboard cards stack nicely */
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* 4️⃣ Filter bar stacks */
+  .filter-bar {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* 5️⃣ Ticket rows stack */
+  .ticket-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* 6️⃣ Form width adapts */
+  .form-wrapper,
+  .form-card {
+    max-width: 100%;
+  }
 }
