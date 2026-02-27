@@ -97,6 +97,7 @@ body {
 
 /* ========== FILTER BAR ========== */
 .filter-bar {
+  backdrop-filter: blur(15px);
   display: grid;
   grid-template-columns: repeat(3, 1fr) auto;
   gap: 20px;
