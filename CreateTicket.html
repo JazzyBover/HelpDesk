@@ -3,30 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Create-A-Ticket</title>
+  <title>Raise-A-Ticket</title>
 </head>
 <body>
-  <h1>create ticket</h1> 
-  <div class="container">
-    <form>
-      <label>Ticket Title : <input type="text" name="ticketname"></label>
-      <label>Category : 
-        <select>
-          <option>Technical Issue</option>
-          <option>Billing</option>
-          <option>Account</option>
-          <option>General Inquiry</option>
-        </select></label>
-      <label>Priority : 
-        <select>
-          <option>Low</option>
-          <option>Medium</option>
-          <option>High</option>
-        </select></label>
-      <label>File : <input type="file" name=""></label>
-      <label>Description : <textarea></textarea></label>
-      <button type="submit">SUBMIT</button>
-    </form>
+  <div class="app">
+    
+    <aside class="sidebar">
+      <h2 class="logo">HelpDesk</h2>
+      <nav>
+        <a href="Dashboard.html">Dashboard</a>
+        <a href="AllTickets.html">Tickets</a>
+        <a href="CreateTicket.html">Raise a Ticket</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <!-- page specific content here -->
+       <h1 class="page-title">Create Ticket</h1>
+<p class="page-subtitle">Submit a new support request</p>
+
+<div class="card form-card">
+  <form>
+
+    <div class="form-group">
+      <label>Ticket Title</label>
+      <input type="text">
+    </div>
+
+    <div class="form-group">
+      <label>Category</label>
+      <select>
+        <option>Technical Issue</option>
+        <option>Billing</option>
+        <option>Account</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Priority</label>
+      <select>
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Description</label>
+      <textarea rows="4"></textarea>
+    </div>
+
+    <button class="btn">Submit</button>
+  </form>
+</div>
+    </main>
+
   </div>
 </body>
 </html>
