@@ -67,7 +67,7 @@ body {
   margin-bottom: 36px;
 }
 
-/* ========== CARD (SOFT) ========== */
+/* ========== CARD ========== */
 .card {
   backdrop-filter: blur(15px);
   border-radius: 20px;
